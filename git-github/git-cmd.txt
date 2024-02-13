@@ -36,5 +36,8 @@ $ git remote add origin https://github.com/izancode/upgrad-course.git (This is h
 -This is for push the code on the github account
 $ git push -u origin main
 
+-Check the status on which stage is file are there
+$ git status
+
 
 
