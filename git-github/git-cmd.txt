@@ -1,0 +1,17 @@
+-Configure Git Identity
+$ git config --global user.name "izancode"
+$ git config --global user.email "izancode11@gmail.com"
+
+-Configure Git Identity
+$ git config --global core.editor "code --wait"
+
+-Configure Default Branch
+$ git config --global init.defaultBranch main
+
+-List all Configurations
+$ git config --list
+
+-Initialization Commands
+$ git init
+
+
