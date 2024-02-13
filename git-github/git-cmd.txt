@@ -14,4 +14,27 @@ $ git config --list
 -Initialization Commands
 $ git init
 
+-Add text and with that create a file
+$ echo "# jane-story-series" >> README.md
+
+-Add git to staging area
+$ git add . (if you want to update the whole folder or file)
+$ git add {Folder or File  name} (To add a specific folder or file)
+
+-Add commit to Respository(Github) area
+$ git commit -m "first commit"
+
+-Check on which branch are you
+$ git branch
+
+-Change Branch name eg: master to main
+$ git branch -M main
+
+-To connect our local system Folder or File to Github Website
+$ git remote add origin https://github.com/izancode/upgrad-course.git (This is http url)
+
+-This is for push the code on the github account
+$ git push -u origin main
+
+
 
