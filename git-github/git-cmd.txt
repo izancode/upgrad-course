@@ -67,6 +67,12 @@ $ git checkout -b jane_web_series (to create and enter into new branch)
 $ git diff main..jane_tv_series (to compare two branch)
 $ git merge jane_tv_series
 
+-Cloning Repositories
+$ git clone https://github.com/sumyat-aung/to-do-list.git
+$ git commit filename.txt -m "Learning to work with clones"
+
+
+
 
 
 
