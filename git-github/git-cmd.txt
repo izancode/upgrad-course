@@ -56,6 +56,13 @@ $ git rm (removes the file also from the working directory)
 $ git mv (A thin convenience command to move a file)
 $ git mv oldFile newFile (to rename a file in git)
 
+-Git Branching in a Nutshell
+$ git branch (To show all the branches are made)
+$ git branch jane_tv_series (create a new branch)
+$ cat .git/HEAD (to find a branch file path)
+$ ls .git/refs/heads (to enter in the folder)
+$ cat .git/refs/heads/branchname (to find a hash key of a commit)
+
 
 
 
