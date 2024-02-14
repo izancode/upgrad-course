@@ -45,4 +45,19 @@ $ git status
 -Comparing Changes using Git Diff
 $ git diff --staged (Compare changes with last commit)
 
+-Checking Commit History
+$ git log
+$ git log -p (This shows difference intoduced in each commit)
+$ git log -1 (limit the git log commit to show)
+$ git log --oneline (to show all the commit message only)
+
+-Removing and moving Content
+$ git rm (removes the file also from the working directory)
+$ git mv (A thin convenience command to move a file)
+$ git mv oldFile newFile (to rename a file in git)
+
+
+
+
+
 
