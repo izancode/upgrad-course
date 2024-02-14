@@ -39,5 +39,7 @@ $ git push -u origin main
 -Check the status on which stage is file are there
 $ git status
 
+-Comparing Changes using Git Diff
+$ git diff --staged (Compare changes with last commit)
 
 
