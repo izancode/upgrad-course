@@ -62,6 +62,14 @@ $ git branch jane_tv_series (create a new branch)
 $ cat .git/HEAD (to find a branch file path)
 $ ls .git/refs/heads (to enter in the folder)
 $ cat .git/refs/heads/branchname (to find a hash key of a commit)
+$ git checkout jane_tv_series (to create new branch)
+$ git checkout -b jane_web_series (to create and enter into new branch)
+$ git diff main..jane_tv_series (to compare two branch)
+$ git merge jane_tv_series
+
+
+
+
 
 
 
