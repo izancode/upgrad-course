@@ -1,8 +1,7 @@
 [submodule "git-github/kanugoyal/Resume"]
     path = git-github/kanugoyal/Resume
-    url = https://github.com/kanugoyal/Resume
+    url = https://github.com/kanugoyal/Resume.git
 
-    [submodule "github.com/SushantAmin17/practise"]
-    path = github.com/SushantAmin17/practise
-    url = https://github.com/SushantAmin17/practise
-
+[submodule "git-github/sushantPractice/practise"]
+    path = git-github/sushantPractice/practise
+    url = https://github.com/SushantAmin17/practise.git
