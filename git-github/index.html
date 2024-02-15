@@ -1,97 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Protest+Revolution&display=swap');
+
+        h1 {
+            font-family: "Protest Revolution", sans-serif;
+            font-weight: bold;
+            font-style: normal;
+            color: #f15663;
+            white-space: normal;
+        }
+
+        .allTopicsLink {
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            color: #666666;
+            font-size: 1rem;
+        }
+
+    </style>
 </head>
+
 <body>
--Configure Git Identity
-$ git config --global user.name "izancode"
-$ git config --global user.email "izancode11@gmail.com"
 
--Configure Git Identity
-$ git config --global core.editor "code --wait"
 
--Configure Default Branch
-$ git config --global init.defaultBranch main
+    <div class="container text-center p- p-sm-5">
+        <div class="row">
+            <div class="col-12 my-3 p-0">
+                <h1 class="text-center">
+                    <a class="navbar-brand"
+                        href="https://www.upgrad.com/bootcamps/fullstack-development/?gad_source=1&gclid=CjwKCAiAibeuBhAAEiwAiXBoJE-LjmXM7EfjyAdCEbK51_xmBg8CD3KhzINbuKk4FoRKAVfHl2BA4RoCsjAQAvD_BwE"># git-github</a>
+                </h1>
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="card border shadow-sm p-3 rounded-0">
+                    <a class="navbar-brand allTopicsLink" data-bs-toggle="tooltip" data-bs-title="Click Here"   href="jane-stories/index.html">1. Jane stories</a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="card border shadow-sm p-3 rounded-0">
+                    <a class="navbar-brand allTopicsLink" href="kanugoyal/Resume/index.html" data-bs-toggle="tooltip" data-bs-title="Click Here">2. Kanu goyal</a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="card border shadow-sm p-3 rounded-0">
+                    <a class="navbar-brand allTopicsLink" href="sushantPractice/practise/index.html" data-bs-toggle="tooltip" data-bs-title="Click Here">3. Sushant Practice</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
--List all Configurations
-$ git config --list
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
--Initialization Commands
-$ git init
-
--Add text and with that create a file
-$ echo "# jane-story-series" >> README.md
-
--Add git to staging area
-$ git add . (if you want to update the whole folder or file)
-$ git add {Folder or File  name} (To add a specific folder or file)
-
--Add commit to Respository(Github) area
-$ git commit -m "first commit"
-
--Check on which branch are you
-$ git branch
-
--Change Branch name eg: master to main
-$ git branch -M main
-
--To connect our local system Folder or File to Github Website
-$ git remote add origin https://github.com/izancode/upgrad-course.git (This is http url)
-
--This is for push the code on the github account
-$ git push origin main
-$ git push -u origin main (if you want to commit onlyt main branch)
-then use
-$ git push
-
--Check the status on which stage is file are there
-$ git status
-
--Comparing Changes using Git Diff
-$ git diff --staged (Compare changes with last commit)
-
--Checking Commit History
-$ git log
-$ git log -p (This shows difference intoduced in each commit)
-$ git log -1 (limit the git log commit to show)
-$ git log --oneline (to show all the commit message only)
-
--Removing and moving Content
-$ git rm (removes the file also from the working directory)
-$ git mv (A thin convenience command to move a file)
-$ git mv oldFile newFile (to rename a file in git)
-
--Git Branching in a Nutshell
-$ git branch (To show all the branches are made)
-$ git branch jane_tv_series (create a new branch)
-$ cat .git/HEAD (to find a branch file path)
-$ ls .git/refs/heads (to enter in the folder)
-$ cat .git/refs/heads/branchname (to find a hash key of a commit)
-$ git checkout jane_tv_series (to create new branch)
-$ git checkout -b jane_web_series (to create and enter into new branch)
-$ git diff main..jane_tv_series (to compare two branch)
-$ git merge jane_tv_series
-
--Cloning Repositories
-$ git clone https://github.com/sumyat-aung/to-do-list.git
-$ git commit filename.txt -m "Learning to work with clones"
-
-<h1>1. Git Github Page</h1>
-    <table style="width: 100%;" border="1">
-        <tr>
-            <td>
-                <a href="jane-stories/index.html">Jane stories</a>
-            </td>
-            <td>
-                <a href="kanugoyal/Resume/index.html">Kanu goyal</a>
-            </td>
-            <td>
-                <a href="sushantPractice/practise/index.html">Sushant Practice</a>
-            </td>
-        </tr>
-    </table>
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
 </body>
+
 </html>
