@@ -2,7 +2,7 @@
     path = git-github/kanugoyal/Resume
     url = https://github.com/kanugoyal/Resume
 
-    [submodule "git-github/sushantPractice/practise"]
-    path = git-github/sushantPractice/practise
-    url = https://github.com/sushantPractice/practise
+    [submodule "github.com/SushantAmin17/practise"]
+    path = github.com/SushantAmin17/practise
+    url = https://github.com/SushantAmin17/practise
 
