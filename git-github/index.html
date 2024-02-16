@@ -72,7 +72,7 @@
                   </div>
             </div>
             <div class="col-12 my-3">
-                <h5>-Configure Git Identity</h5>
+                <h5>-Configure Code Editor</h5>
                 <div class="card bg-dark text-white p-3 rounded-0">
                     <p>$ git config --global core.editor "code --wait"</p>
                   </div>
@@ -89,6 +89,137 @@
                     <p>$ git config --list</p>
                                   </div>
             </div>
+            <div class="col-12 my-3">
+                <h5>-Initialization Commands</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git init</p>
+                                  </div>
+            </div>
+
+
+
+
+            <div class="col-12 my-3">
+                <h5>-Add text and with that create a file</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ echo "# jane-story-series" >> README.md</p>
+                                  </div>
+            </div>
+            <div class="col-12 my-3">
+                <h5>-Add git to staging area</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git add . (if you want to update the whole folder or file)</p>
+                    <p>$ git add {Folder or File  name} (To add a specific folder or file)</p>
+                                  </div>
+            </div>
+            <div class="col-12 my-3">
+                <h5>-Add commit to Respository(Github) area</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git commit -m "first commit"</p>
+                                  </div>
+            </div>
+            <div class="col-12 my-3">
+                <h5>-Check on which branch are you</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git branch</p>
+                                  </div>
+            </div>
+            <div class="col-12 my-3">
+                <h5>-Change Branch name eg: master to main</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git branch -M main</p>
+                                  </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="col-12 my-3">
+                <h5>-To connect our local system Folder or File to Github Website</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git remote add origin https://github.com/izancode/upgrad-course.git (This is http url)</p>
+                                  </div>
+            </div>
+            <div class="col-12 my-3">
+                <h5>-This is for push the code on the github account</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git push origin main</p>
+                    <p>$ git push -u origin main (if you want to commit onlyt main branch)</p>
+                    <p>then use</p>
+                    <p>$ git push</p>
+                </div>
+            </div>
+            <div class="col-12 my-3">
+                <h5>-Check the status on which stage is file are there</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git status</p>
+                                  </div>
+            </div>
+
+
+
+
+
+
+            <div class="col-12 my-3">
+                <h5>-Comparing Changes using Git Diff</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git diff --staged (Compare changes with last commit)</p>
+                                  </div>
+            </div>
+            <div class="col-12 my-3">
+                <h5>-Checking Commit History</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git log</p>
+                    <p>$ git log -p (This shows difference intoduced in each commit)</p>
+                    <p>$ git log -1 (limit the git log commit to show)</p>
+                    <p>$ git log --oneline (to show all the commit message only)</p>
+                                  </div>
+            </div>
+            <div class="col-12 my-3">
+                <h5>-Removing and moving Content</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git rm (removes the file also from the working directory)</p>
+                    <p>$ git mv (A thin convenience command to move a file)</p>
+                    <p>$ git mv oldFile newFile (to rename a file in git)</p>
+                                  </div>
+            </div>
+            <div class="col-12 my-3">
+                <h5>-Git Branching in a Nutshell</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git branch (To show all the branches are made)</p>
+                    <p>$ git branch jane_tv_series (create a new branch)</p>
+                    <p>$ cat .git/HEAD (to find a branch file path)</p>
+                    <p>$ ls .git/refs/heads (to enter in the folder)</p>
+                    <p>$ cat .git/refs/heads/branchname (to find a hash key of a commit)</p>
+                    <p>$ git checkout jane_tv_series (to create new branch)</p>
+                    <p>$ git checkout -b jane_web_series (to create and enter into new branch)</p>
+                    <p>$ git diff main..jane_tv_series (to compare two branch)</p>
+                    <p>$ git merge jane_tv_series</p>
+                                  </div>
+            </div>
+            <div class="col-12 my-3">
+                <h5>-Cloning Repositories</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git clone https://github.com/sumyat-aung/to-do-list.git</p>
+                    <p>$ git commit filename.txt -m "Learning to work with clones"</p>
+                                  </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
         </div>
     </div>
 
