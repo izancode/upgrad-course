@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +8,9 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Protest+Revolution&display=swap');
-body{
-    font-family: "Josefin Sans", sans-serif;
-}
+        body {
+            font-family: "Josefin Sans", sans-serif;
+        }
         h1 {
             font-family: "Protest Revolution", sans-serif;
             font-weight: bold;
@@ -19,7 +18,6 @@ body{
             color: #f15663;
             white-space: normal;
         }
-
         .allTopicsLink {
             font-family: "Josefin Sans", sans-serif;
             font-optical-sizing: auto;
@@ -28,124 +26,103 @@ body{
             color: #666666;
             font-size: 1rem;
         }
-        p{
+        p {
             margin: 0;
         }
-
     </style>
 </head>
-
 <body>
-
-
     <div class="container text-center p-2 p-sm-5">
         <div class="row">
             <div class="col-12 my-3 p-0">
                 <h1 class="text-center">
-                    <a class="navbar-brand"
-                        href="https://github.com/izancode" target="_blank"># git-github</a>
+                    <a class="navbar-brand" href="https://github.com/izancode" target="_blank"># git-github</a>
                 </h1>
             </div>
             <div class="col-12 col-sm-4 my-1 my-sm-0">
                 <div class="card border shadow-sm p-3 rounded-0">
-                    <a class="navbar-brand allTopicsLink" data-bs-toggle="tooltip" data-bs-title="Click Here"   href="jane-stories">1. Jane stories</a>
+                    <a class="navbar-brand allTopicsLink" data-bs-toggle="tooltip" data-bs-title="Click Here"
+                        href="jane-stories">1. Jane stories</a>
                 </div>
             </div>
             <div class="col-12 col-sm-4 my-1 my-sm-0">
                 <div class="card border shadow-sm p-3 rounded-0">
-                    <a class="navbar-brand allTopicsLink" href="kanugoyal/Resume" data-bs-toggle="tooltip" data-bs-title="Click Here">2. Kanu goyal</a>
+                    <a class="navbar-brand allTopicsLink" href="kanugoyal/Resume" data-bs-toggle="tooltip"
+                        data-bs-title="Click Here">2. Kanu goyal</a>
                 </div>
             </div>
             <div class="col-12 col-sm-4 my-1 my-sm-0">
                 <div class="card border shadow-sm p-3 rounded-0">
-                    <a class="navbar-brand allTopicsLink" href="sushantPractice/practise" data-bs-toggle="tooltip" data-bs-title="Click Here">3. Sushant Practice</a>
+                    <a class="navbar-brand allTopicsLink" href="sushantPractice/practise" data-bs-toggle="tooltip"
+                        data-bs-title="Click Here">3. Sushant Practice</a>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="container">
         <div class="row">
             <div class="col-12 my-3">
                 <h5>-Configure Git Identity</h5>
                 <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git config --system </p>
+                    <p>$ git config --global </p>
+                    <p>$ git config --local </p>
                     <p>$ git config --global user.name "izancode"</p>
                     <p>$ git config --global user.email "izancode11@gmail.com"</p>
-                  </div>
-            </div>
-            <div class="col-12 my-3">
-                <h5>-Configure Code Editor</h5>
-                <div class="card bg-dark text-white p-3 rounded-0">
-                    <p>$ git config --global core.editor "code --wait"</p>
-                  </div>
+                </div>
             </div>
             <div class="col-12 my-3">
                 <h5>-Configure Default Branch</h5>
                 <div class="card bg-dark text-white p-3 rounded-0">
                     <p>$ git config --global init.defaultBranch main</p>
-                  </div>
+                </div>
+            </div>
+            <div class="col-12 my-3">
+                <h5>-Configure Code Editor</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git config --global core.editor "code --wait"</p>
+                </div>
             </div>
             <div class="col-12 my-3">
                 <h5>-List all Configurations</h5>
                 <div class="card bg-dark text-white p-3 rounded-0">
                     <p>$ git config --list</p>
-                                  </div>
+                </div>
             </div>
             <div class="col-12 my-3">
                 <h5>-Initialization Commands</h5>
                 <div class="card bg-dark text-white p-3 rounded-0">
                     <p>$ git init</p>
-                                  </div>
+                </div>
             </div>
-
-
-
-
             <div class="col-12 my-3">
-                <h5>-Add text and with that create a file</h5>
+                <h5>-Check the status on which stage is file are there</h5>
                 <div class="card bg-dark text-white p-3 rounded-0">
-                    <p>$ echo "# jane-story-series" >> README.md</p>
-                                  </div>
+                    <p>$ git status</p>
+                </div>
             </div>
             <div class="col-12 my-3">
                 <h5>-Add git to staging area</h5>
                 <div class="card bg-dark text-white p-3 rounded-0">
                     <p>$ git add . (if you want to update the whole folder or file)</p>
-                    <p>$ git add {Folder or File  name} (To add a specific folder or file)</p>
-                                  </div>
+                    <p>$ git add {Folder or File name} (To add a specific folder or file)</p>
+                </div>
             </div>
+
+            <div class="col-12 my-3">
+                <h5>-Comparing Changes using Git Diff</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git diff --staged (Compare changes with last commit)</p>
+                </div>
+            </div>
+
             <div class="col-12 my-3">
                 <h5>-Add commit to Respository(Github) area</h5>
                 <div class="card bg-dark text-white p-3 rounded-0">
                     <p>$ git commit -m "first commit"</p>
-                                  </div>
-            </div>
-            <div class="col-12 my-3">
-                <h5>-Check on which branch are you</h5>
-                <div class="card bg-dark text-white p-3 rounded-0">
-                    <p>$ git branch</p>
-                                  </div>
-            </div>
-            <div class="col-12 my-3">
-                <h5>-Change Branch name eg: master to main</h5>
-                <div class="card bg-dark text-white p-3 rounded-0">
-                    <p>$ git branch -M main</p>
-                                  </div>
+                </div>
             </div>
 
-
-
-
-
-
-
-
-            <div class="col-12 my-3">
-                <h5>-To connect our local system Folder or File to Github Website</h5>
-                <div class="card bg-dark text-white p-3 rounded-0">
-                    <p>$ git remote add origin https://github.com/izancode/upgrad-course.git (This is http url)</p>
-                                  </div>
-            </div>
             <div class="col-12 my-3">
                 <h5>-This is for push the code on the github account</h5>
                 <div class="card bg-dark text-white p-3 rounded-0">
@@ -155,23 +132,13 @@ body{
                     <p>$ git push</p>
                 </div>
             </div>
-            <div class="col-12 my-3">
-                <h5>-Check the status on which stage is file are there</h5>
-                <div class="card bg-dark text-white p-3 rounded-0">
-                    <p>$ git status</p>
-                                  </div>
-            </div>
-
-
-
-
-
 
             <div class="col-12 my-3">
-                <h5>-Comparing Changes using Git Diff</h5>
+                <h5>-To update your local repository with git pull</h5>
                 <div class="card bg-dark text-white p-3 rounded-0">
-                    <p>$ git diff --staged (Compare changes with last commit)</p>
-                                  </div>
+                
+                    <p>$ git pull</p>
+                </div>
             </div>
             <div class="col-12 my-3">
                 <h5>-Checking Commit History</h5>
@@ -180,7 +147,7 @@ body{
                     <p>$ git log -p (This shows difference intoduced in each commit)</p>
                     <p>$ git log -1 (limit the git log commit to show)</p>
                     <p>$ git log --oneline (to show all the commit message only)</p>
-                                  </div>
+                </div>
             </div>
             <div class="col-12 my-3">
                 <h5>-Removing and moving Content</h5>
@@ -188,8 +155,89 @@ body{
                     <p>$ git rm (removes the file also from the working directory)</p>
                     <p>$ git mv (A thin convenience command to move a file)</p>
                     <p>$ git mv oldFile newFile (to rename a file in git)</p>
-                                  </div>
+                </div>
             </div>
+
+            <div class="col-12 my-3">
+                <h5>-Check All the branch</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git branch</p>
+                </div>
+            </div>
+
+            <div class="col-12 my-3">
+                <h5>-Rename Branch name eg: master to main</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git branch -M main</p>
+                </div>
+            </div>
+
+            <div class="col-12 my-3">
+                <h5>-To switch to the new branch, use the command </h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git checkout jane_tv_series</p>
+                </div>
+            </div>
+
+            <div class="col-12 my-3">
+                <h5>-You need compare changes between two branch </h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git diff main..jane_tv_series </p>
+                </div>
+            </div>
+
+            <div class="col-12 my-3">
+                <h5>-Merge the changes from the feature branch </h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git merge jane_tv_series </p>
+                </div>
+            </div>
+            <div class="col-12 my-3">
+                <h5>-To enable contributors to clone and contribute to our repository</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p> we need to first add them as collaborators in GitHub</p>
+                    <p>So go to the repository to clone in GitHub then go to  Settings -> Manage Access, Click on Invite Collaborators, and type the username or email address to send an invitation.  </p>
+                </div>
+            </div>
+            <div class="col-12 my-3">
+                <h5>-Cloning Repositories</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p> You are cloning the repository with HTTPS and not ssh. This URL is also the link of the repository over GitHub Cloud.</p>
+                    <p>Type CD to change the directory to which you want to clone the repository.</p>
+                    <p>$ git clone https://github.com/Jane-stories/jane-story-series.git</p>
+                    <p>$ git commit filename.txt -m "Learning to work with clones"</p>
+                </div>
+            </div>
+
+            <div class="col-12 my-3">
+                <h5>-Make some changes and commit them</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>For example, add a new file called cloning.txt by typing touch cloning.txt</p>
+                    <p>Then follow the basic git workflow to add and commit this new file into the local git repository. Type: </p>
+                    <p>$ git add cloning.txt</p>
+                    <p>$ git commit -m “Learning to work with clones” </p>
+                    <p>Now type git status to confirm that the commit was successful.  </p>
+                    <p>git push ‑u origin main </p>
+                </div>
+            </div>
+            <div class="col-12 my-3">
+                <h5>-Add text and with that create a file</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ echo "# jane-story-series" >> README.md</p>
+                </div>
+            </div>
+           
+           
+          
+            <div class="col-12 my-3">
+                <h5>-To connect our local system Folder or File to Github Website</h5>
+                <div class="card bg-dark text-white p-3 rounded-0">
+                    <p>$ git remote add origin https://github.com/izancode/upgrad-course.git (This is http url)</p>
+                </div>
+            </div>
+          
+          
+           
             <div class="col-12 my-3">
                 <h5>-Git Branching in a Nutshell</h5>
                 <div class="card bg-dark text-white p-3 rounded-0">
@@ -202,36 +250,20 @@ body{
                     <p>$ git checkout -b jane_web_series (to create and enter into new branch)</p>
                     <p>$ git diff main..jane_tv_series (to compare two branch)</p>
                     <p>$ git merge jane_tv_series</p>
-                                  </div>
+                </div>
             </div>
-            <div class="col-12 my-3">
-                <h5>-Cloning Repositories</h5>
-                <div class="card bg-dark text-white p-3 rounded-0">
-                    <p>$ git clone https://github.com/sumyat-aung/to-do-list.git</p>
-                    <p>$ git commit filename.txt -m "Learning to work with clones"</p>
-                                  </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
+            
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-
-<script>
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
-
 </html>
